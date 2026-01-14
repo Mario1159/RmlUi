@@ -125,7 +125,7 @@ void SystemInterface_SDL::DeactivateKeyboard()
 	}
 }
 
-bool RmlSDL::InputEventHandler(Rml::Context* context, SDL_Window* window, SDL_Event& ev)
+bool RmlSDL::InputEventHandler(Rml::Context* context, SDL_Window* window, const SDL_Event& ev)
 {
 #if SDL_MAJOR_VERSION >= 3
 	#define RMLSDL_WINDOW_EVENTS_BEGIN
